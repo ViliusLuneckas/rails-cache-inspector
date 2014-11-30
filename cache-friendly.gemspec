@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Cache::Friendly::VERSION
   spec.authors       = ['Vilius Luneckas']
   spec.email         = ['vilius.luneckas@gmail.com']
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Dead simple tool for visual debugging of fragment cache.}
+  spec.description   = spec.summary
   spec.homepage      = 'https://github.com/ViliusLuneckas/cache-friendly'
   spec.license       = 'MIT'
 

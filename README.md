@@ -1,6 +1,6 @@
 # Cache::Friendly
 
-TODO: Write a gem description
+Dead simple tool for visual debugging of fragment cache.
 
 ## Installation
 
