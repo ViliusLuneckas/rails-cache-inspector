@@ -3,7 +3,7 @@ module RailsCacheInspector
     config.to_prepare do
       return unless Rails.env.development? && Rails.application.config.action_controller.perform_caching
 
-      ActionView::Helpers::CacheHelper.send(:include, FragmentForPatch)
+      ApplicationHelper.prepend FragmentForPatch
     end
   end
 end
