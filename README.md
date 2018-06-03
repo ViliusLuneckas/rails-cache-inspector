@@ -17,8 +17,9 @@ gem 'rails-cache-inspector', group: :development
 ```Ruby
 # config/initializers/rails_cache_inspector.rb
 
-RailsCacheInspector.highlight_with = { 
-  style: 'filter: sepia(1);'  # currently default 
+RailsCacheInspector.configuration.highlight_with = { 
+  style:      'filter: sepia(1)',  # default – 'filter: sepia(1)'
+  class_name: 'is-cached'          # default - ''
 }
 
 ```
