@@ -1,4 +1,4 @@
-# Cache::Friendly
+# Rails cache inspector
 
 Dead simple tool for visual debugging of fragment cache.
 
@@ -7,7 +7,7 @@ Dead simple tool for visual debugging of fragment cache.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cache-friendly', group: :development
+gem 'rails-cache-inspector', group: :development
 ```
 
 ## Usage
@@ -32,3 +32,10 @@ Make sure caching is turned on in development environment
 
 config.action_controller.perform_caching = true
 ```
+
+### In action
+
+Cached fragments have blur filter in the demonstration below. It's easy to identify potentially slow parts of the page 
+and make it fast again.
+
+![visual-debugging](https://github.com/ViliusLuneckas/rails-cache-inspector/blob/master/visual-debugging.gif)
