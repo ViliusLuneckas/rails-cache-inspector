@@ -8,7 +8,7 @@ module RailsCacheInspector
       fragment = fragment_for_without_cache_friendly(name, options, &block)
 
       <<-HTML.strip_heredoc
-      <div style="background-color: rgba(0, 255, 23, 0.22) !important" data-cache-friendly=true>
+      <div style="#{RailsCacheInspector.configuration.highlight_with[:style]}">
         #{fragment}
       </div>
       HTML
