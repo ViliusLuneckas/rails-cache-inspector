@@ -1,16 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cache/friendly/version'
+
+require 'rails-cache-inspector/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'cache-friendly'
-  spec.version       = Cache::Friendly::VERSION
+  spec.name          = 'rails-cache-inspector'
+  spec.version       = RailsCacheInspector::VERSION
   spec.authors       = ['Vilius Luneckas']
   spec.email         = ['vilius.luneckas@gmail.com']
   spec.summary       = %q{Dead simple tool for visual debugging of fragment cache.}
   spec.description   = spec.summary
-  spec.homepage      = 'https://github.com/ViliusLuneckas/cache-friendly'
+  spec.homepage      = 'https://github.com/ViliusLuneckas/rails-cache-inspector'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
